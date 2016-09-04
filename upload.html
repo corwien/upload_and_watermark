@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片加水印</title>
+</head>
+<body>
+<form method="post" action="upload_and_water.php?act=insert" enctype="multipart/form-data">
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <td>产品图片：</td>
+            <td><input type="hidden" name="max_file_size" value="1024000">
+                <input type="file" name="picture[]">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="提交"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
